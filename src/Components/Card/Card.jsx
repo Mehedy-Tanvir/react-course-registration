@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-const Card = ({ course }) => {
+const Card = ({ course, handleSelect }) => {
   return (
     <div className="self-center p-4 bg-white card rounded-xl justify-self-center">
       <figure>
@@ -31,7 +31,10 @@ const Card = ({ course }) => {
           </div>
         </div>
         <div className="justify-end card-actions mt-[26px]">
-          <button className="w-full normal-case btn btn-primary font-inter bg-[#2F80ED] text-[18px] font-semibold text-white rounded-lg">
+          <button
+            className="w-full normal-case btn btn-primary font-inter bg-[#2F80ED] text-[18px] font-semibold text-white rounded-lg"
+            onClick={() => handleSelect(course)}
+          >
             Select
           </button>
         </div>
@@ -41,5 +44,6 @@ const Card = ({ course }) => {
 };
 Card.propTypes = {
   course: PropTypes.object.isRequired,
+  handleSelect: PropTypes.func.isRequired,
 };
 export default Card;
