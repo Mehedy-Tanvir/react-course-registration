@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to C Programming",
+    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "image": "https://i.ibb.co/yRC1ss8/Rectangle-2-2.png",
+    "price": 15000,
+    "credit": 1
+  },
+  {
+    "id": 2,
+    "title": "Introduction to Algorithms",
+    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "image": "https://i.ibb.co/YbstGjs/Rectangle-2-3.png",
+    "price": 25000,
+    "credit": 2
+  },
+  {
+    "id": 3,
+    "title": "Introduction to C++ for DSA",
+    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "image": "https://i.ibb.co/WnHf44X/Rectangle-2-4.png",
+    "price": 10000,
+    "credit": 10
+  },
+  {
+    "id": 4,
+    "title": "Basic Data Structures",
+    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "image": "https://i.ibb.co/GpZp2v9/Rectangle-3.png",
+    "price": 35000,
+    "credit": 5
+  },
+  {
+    "id": 5,
+    "title": "Introduction to OOP Python",
+    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "image": "https://i.ibb.co/WK5zs7c/Rectangle-2.png",
+    "price": 19000,
+    "credit": 5
+  },
+  {
+    "id": 6,
+    "title": "Software Engineering",
+    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "image": "https://i.ibb.co/gTsYBdX/Rectangle-2-5.png",
+    "price": 23000,
+    "credit": 2
+  },
+  {
+    "id": 7,
+    "title": "AWS, Cloud Computing",
+    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "image": "https://i.ibb.co/PDnb1jv/Rectangle-3-1.png",
+    "price": 35000,
+    "credit": 5
+  },
+  {
+    "id": 8,
+    "title": "Database (MySQL)",
+    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "image": "https://i.ibb.co/Ny1wXj1/Rectangle-2-1.png",
+    "price": 19000,
+    "credit": 5
+  },
+  {
+    "id": 9,
+    "title": "Problem-Solving Part",
+    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "image": "https://i.ibb.co/yBwv1PD/Rectangle-2-6.png",
+    "price": 23000,
+    "credit": 2
+  }
+]
