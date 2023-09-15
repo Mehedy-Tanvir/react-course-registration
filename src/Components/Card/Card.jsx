@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 const Card = ({ course }) => {
   return (
-    <div className="p-4 card w-[320px] bg-white rounded-xl justify-self-center self-center">
+    <div className="self-center p-4 bg-white card rounded-xl justify-self-center">
       <figure>
         <img
           src={course.image}
