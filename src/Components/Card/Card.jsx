@@ -1,31 +1,32 @@
-const Card = () => {
+import PropTypes from "prop-types";
+const Card = ({ course }) => {
   return (
-    <div className="p-4 card w-[312px] bg-white rounded-xl">
+    <div className="p-4 card w-[320px] bg-white rounded-xl justify-self-center self-center">
       <figure>
         <img
-          src="https://i.ibb.co/yRC1ss8/Rectangle-2-2.png"
+          src={course.image}
           alt="Course Image"
+          className="w-[280px] h-[140px] mx-auto"
         />
       </figure>
-      <div className="mt-[16px]">
+      <div className="mt-[16px] w-[280px] mx-auto">
         <h2 className="text-[#1C1B1B] text-[18px] font-semibold">
-          Introduction to C Programming
+          {course.title}
         </h2>
         <p className="text-[#1C1B1B99] font-normal text-[14px] mt-[12px]">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.
+          {course.details}
         </p>
-        <div className="mt-[19px] flex gap-[16px]">
-          <div className="flex gap-[12px]">
+        <div className="mt-[19px] flex justify-between">
+          <div className="flex gap-[8px]">
             <img src="./dollar-sign.svg" alt="" />
             <p className="text-[#1C1B1B99] font-medium text-[16px]">
-              Price : 15000
+              Price : {course.price}
             </p>
           </div>
           <div className="flex gap-[12px]">
             <img src="./Frame.png" alt="" />
             <p className="text-[#1C1B1B99] font-medium text-[16px]">
-              Credit : 1hr
+              Credit : {course.credit}hr
             </p>
           </div>
         </div>
@@ -38,5 +39,7 @@ const Card = () => {
     </div>
   );
 };
-
+Card.propTypes = {
+  course: PropTypes.object.isRequired,
+};
 export default Card;
