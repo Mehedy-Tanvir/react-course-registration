@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-const Cart = ({ selectedCourses }) => {
+const Cart = ({ selectedCourses, totalCredit }) => {
   return (
     <div className=" bg-white p-[24px] h-full rounded-lg">
       <p className="text-[#2F80ED] text-[18px] font-bold">
-        Credit Hour Remaining 7 hr
+        Credit Hour Remaining {20 - totalCredit} hr
       </p>
       <hr className="border border-[#1C1B1B33] w-full h-[1px] mx-auto mt-[16px]" />
       <h1 className="text-[#1C1B1B] font-bold text-[20px] mt-[16px]">
@@ -21,7 +21,7 @@ const Cart = ({ selectedCourses }) => {
       </ul>
       <hr className="border border-[#1C1B1B33] w-full h-[1px] mx-auto mt-[24px]" />
       <p className="text-[#1C1B1BCC] font-medium text-[16px] mt-[16px]">
-        Total Credit Hour : 13
+        Total Credit Hour : {totalCredit}
       </p>
       <hr className="border border-[#1C1B1B33] w-full h-[1px] mx-auto mt-[16px]" />
       <p className="text-[#1C1B1BCC] font-semibold text-[16px] mt-[16px]">
@@ -32,5 +32,6 @@ const Cart = ({ selectedCourses }) => {
 };
 Cart.propTypes = {
   selectedCourses: PropTypes.array.isRequired,
+  totalCredit: PropTypes.number.isRequired,
 };
 export default Cart;
