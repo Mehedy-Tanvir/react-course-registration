@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-const Cart = ({ selectedCourses, totalCredit }) => {
+const Cart = ({ selectedCourses, totalCredit, totalPrice }) => {
   return (
     <div className=" bg-white p-[24px] h-full rounded-lg">
       <p className="text-[#2F80ED] text-[18px] font-bold">
@@ -25,7 +25,7 @@ const Cart = ({ selectedCourses, totalCredit }) => {
       </p>
       <hr className="border border-[#1C1B1B33] w-full h-[1px] mx-auto mt-[16px]" />
       <p className="text-[#1C1B1BCC] font-semibold text-[16px] mt-[16px]">
-        Total Price : 48000 USD
+        Total Price : {totalPrice} USD
       </p>
     </div>
   );
@@ -33,5 +33,6 @@ const Cart = ({ selectedCourses, totalCredit }) => {
 Cart.propTypes = {
   selectedCourses: PropTypes.array.isRequired,
   totalCredit: PropTypes.number.isRequired,
+  totalPrice: PropTypes.number.isRequired,
 };
 export default Cart;

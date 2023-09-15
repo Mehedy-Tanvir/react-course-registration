@@ -8,6 +8,7 @@ const Main = () => {
   const [courses, setCourses] = useState([]);
   const [selectedCourses, setSelectedCourses] = useState([]);
   const [totalCredit, setTotalCredit] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     fetch("./data.json")
@@ -16,14 +17,19 @@ const Main = () => {
   }, []);
   const handleSelect = (course) => {
     let credit = course.credit;
+    let price = course.price;
     if (!selectedCourses.includes(course)) {
-      const newSelectedCourses = [...selectedCourses, course];
-      selectedCourses.forEach((course) => (credit = credit + course.credit));
+      selectedCourses.forEach((course) => {
+        credit = credit + course.credit;
+        price = price + course.price;
+      });
       if (credit > 20) {
         toast("You can not take more than 20 credits.");
       } else {
+        const newSelectedCourses = [...selectedCourses, course];
         setSelectedCourses(newSelectedCourses);
         setTotalCredit(credit);
+        setTotalPrice(price);
       }
     } else {
       toast("You have already selected this course.");
@@ -38,6 +44,7 @@ const Main = () => {
         <Cart
           selectedCourses={selectedCourses}
           totalCredit={totalCredit}
+          totalPrice={totalPrice}
         ></Cart>
       </div>
     </>
