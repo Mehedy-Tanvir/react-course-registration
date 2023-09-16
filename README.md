@@ -18,4 +18,4 @@ Several state variables are declared using the **useState** hook.
 - **totalCredit**: This variable keeps track of the total number of credits for the selected courses.
 - **totalPrice**: Similar to totalCredit, this variable tracks the total price of the selected courses.
 
-## [ Live Link](https://venerable-croquembouche-bd1971.netlify.app/)
+## [ Live Link: Course Registration](https://venerable-croquembouche-bd1971.netlify.app/)
